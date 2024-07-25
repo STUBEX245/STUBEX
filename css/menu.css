@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+
+}
+
+a {
+  color: white;
+}
+
+a:hover{
+	color: #f5a623;
+}
+
+/* header */
+
+.header {
+  background-color: #4e657a;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  padding-bottom: 70px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  overflow: hidden;
+  background-color: #4e657a;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: white;
+  text-decoration: none;
+}
+
+/* .header li a:hover,
+.header .menu-btn:hover {
+  //background-color: #f4f4f4;
+} */
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 3em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  padding-top:5px;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+footer {
+  text-align: center;
+  background-color: #718495;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: sticky;
+  top: 100%;
+  width: 100%;
+}
+
+        /* .btn {
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+        color:white;
+        background-color: #435c70;
+        cursor: pointer;
+        font-size: 18px;
+        } */
+
+        /* Style the active class, and buttons on mouse-over */
+        /* .active, .btn:hover {
+        background-color: #666;
+        color: #f5a623;
+        } */
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 60em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
