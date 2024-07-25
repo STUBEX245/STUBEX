@@ -1,5 +1,5 @@
-1. Put the entire folder into laragon or xampp folder.
-2. Load SQL file named database.sql.
+Step 1: Put the entire folder into laragon or xampp folder.
+Step 2: Load SQL file named fyp_project.sql.
 
 Database name: fyp_project
 
