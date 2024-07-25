@@ -3,18 +3,17 @@
 
 Database name: fyp_project
 
-+-----------------------+
-| Tables_in_fyp_project |
-+-----------------------+
-| address               |
-| cart                  |
-| category              |
-| chats                 |
-| conversations         |
-| order_list            |
-| product               |
-| users                 |
-+-----------------------+
+
+Tables_in_fyp_project 
+1. address               
+2. cart
+3. category
+4. chats
+5. conversations
+6. order_list
+7. product
+8. users                 
+
 
 User login information
 email    -  user@gmail.com
